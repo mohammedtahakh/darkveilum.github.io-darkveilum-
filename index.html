@@ -1,301 +1,122 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DARKVEILUM — Premium streetwear. Dark stories, hidden symbols, unknown truths.">
-    <title>DARKVEILUM | Enter The Veil</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DARKVEILUM — streetwear shaped by mystery, identity and self-expression.">
+  <title>DARKVEILUM — Enter the Veil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="announcement">FREE SHIPPING AVAILABLE IN MOROCCO</div>
 
-<!-- ANNOUNCEMENT -->
-<div class="announcement">
-    FREE SHIPPING AVAILABLE IN MOROCCO
-</div>
-
-<!-- HEADER -->
-<header class="header">
-    <a href="index.html" class="logo">DARK<span>VEILUM</span></a>
-
-    <nav class="navigation">
-        <a href="#home">HOME</a>
-        <a href="#shop">SHOP</a>
-        <a href="#categories">CATEGORIES</a>
-        <a href="#collections">COLLECTIONS</a>
-        <a href="#about">ABOUT</a>
-        <a href="#contact">CONTACT</a>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="DARKVEILUM home">DARK<span>VEILUM</span><i>®</i></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">HOME</a>
+      <a href="#shop">SHOP</a>
+      <a href="#categories">CATEGORIES</a>
+      <a href="#collections">COLLECTIONS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
     </nav>
-
-    <a href="#shop" class="header-button">SHOP NOW ↗</a>
-</header>
-
-<!-- HERO -->
-<section class="hero" id="home">
-    <div class="hero-content">
-        <p class="subtitle">WELCOME TO DARKVEILUM</p>
-
-        <h1>ENTER THE<br><span>VEIL.</span></h1>
-
-        <p class="hero-description">
-            Dark stories. Hidden symbols. Unknown truths.
-            Discover streetwear beyond the ordinary.
-        </p>
-
-        <a href="#shop" class="main-button">EXPLORE COLLECTIONS ↗</a>
+    <div class="header-actions">
+      <button class="text-button" id="cartOpen" aria-label="Open shopping bag">BAG (<span id="cartCount">0</span>)</button>
     </div>
+  </header>
 
-    <div class="hero-bottom">
-        <span>NOT EVERYTHING HIDDEN IS LOST.</span>
-        <span>EST. MOROCCO</span>
-    </div>
-</section>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grain"></div>
+      <div class="hero-content">
+        <p class="eyebrow">MYSTERY IN EVERY DETAIL · EST. MOROCCO</p>
+        <h1>ENTER THE<br><em>VEIL.</em></h1>
+        <p class="hero-copy">Dark stories. Hidden symbols. Unknown truths.<br>Discover streetwear beyond the ordinary.</p>
+        <a class="button button-light" href="#shop">EXPLORE THE COLLECTIONS <span>↗</span></a>
+      </div>
+      <div class="hero-mark" aria-hidden="true">D<span>V</span></div>
+      <div class="hero-bottom"><span>NOT EVERYTHING HIDDEN IS LOST.</span><span>01 / DARKVEILUM</span></div>
+    </section>
 
-<!-- INTRODUCTION -->
-<section class="intro">
-    <p class="section-label">THE DARKVEILUM IDENTITY</p>
-    <h2>MORE THAN CLOTHING.<br>
-        <span>A STATEMENT.</span>
-    </h2>
-    <p>
-        Every design begins with a question.
-        Every detail carries a meaning.
-        DARKVEILUM represents individuality,
-        mystery and self-expression.
-    </p>
-</section>
-
-<!-- CATEGORIES -->
-<section class="categories section" id="categories">
-
-    <div class="section-heading">
+    <section class="identity section-wrap" id="about">
+      <div class="section-kicker">THE DARKVEILUM IDENTITY</div>
+      <div class="identity-grid">
+        <h2>MORE THAN CLOTHING.<br><em>A STATEMENT.</em></h2>
         <div>
-            <p class="section-label">EXPLORE THE VEIL</p>
-            <h2>SHOP BY CATEGORY</h2>
+          <p>Every design begins with a question. Every detail carries a meaning. DARKVEILUM represents individuality, mystery and self-expression.</p>
+          <a class="under-link" href="#collections">EXPLORE THE VEIL <span>↗</span></a>
         </div>
-        <a href="#shop" class="text-link">VIEW ALL ↗</a>
-    </div>
+      </div>
+    </section>
 
-    <div class="category-grid">
+    <section class="categories section-wrap" id="categories">
+      <div class="section-heading">
+        <div><p class="section-kicker">FIND YOUR FORM</p><h2>SHOP BY CATEGORY</h2></div>
+        <a class="under-link" href="#shop">VIEW ALL <span>↗</span></a>
+      </div>
+      <div class="category-grid">
+        <a class="category-card category-hoodies" href="#shop" data-filter-link="Hoodies"><span>01</span><strong>HOODIES</strong><small>EXPLORE ↗</small></a>
+        <a class="category-card category-tees" href="#shop" data-filter-link="T-Shirts"><span>02</span><strong>T-SHIRTS</strong><small>EXPLORE ↗</small></a>
+        <a class="category-card category-headwear" href="#shop" data-filter-link="Headwear"><span>03</span><strong>HEADWEAR</strong><small>EXPLORE ↗</small></a>
+        <a class="category-card category-sport" href="#shop" data-filter-link="Sportswear"><span>04</span><strong>SPORTSWEAR</strong><small>EXPLORE ↗</small></a>
+      </div>
+    </section>
 
-        <a href="#hoodies" class="category-card">
-            <img src="images/hoodie.jpg" alt="DARKVEILUM Hoodies">
-            <div class="category-overlay">
-                <h3>HOODIES</h3>
-                <span>EXPLORE ↗</span>
-            </div>
-        </a>
+    <section class="shop section-wrap" id="shop">
+      <div class="section-heading">
+        <div><p class="section-kicker">SELECTED PIECES</p><h2>THE COLLECTION</h2></div>
+        <p class="muted">Choose your piece. Make it yours.</p>
+      </div>
+      <div class="filter-row" id="filterRow">
+        <button class="filter-button active" data-filter="All">ALL</button>
+        <button class="filter-button" data-filter="Hoodies">HOODIES</button>
+        <button class="filter-button" data-filter="T-Shirts">T-SHIRTS</button>
+        <button class="filter-button" data-filter="Headwear">HEADWEAR</button>
+        <button class="filter-button" data-filter="Sportswear">SPORTSWEAR</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="shop-note">Product photos and prices shown here are sample content. Replace them with your real DARKVEILUM products before publishing.</p>
+    </section>
 
-        <a href="#tshirts" class="category-card">
-            <img src="images/tshirt.jpg" alt="DARKVEILUM T-shirts">
-            <div class="category-overlay">
-                <h3>T-SHIRTS</h3>
-                <span>EXPLORE ↗</span>
-            </div>
-        </a>
+    <section class="collection-banner section-wrap" id="collections">
+      <div class="collection-copy">
+        <p class="section-kicker">A DARKVEILUM SERIES</p>
+        <h2>THE UNKNOWN<br>IS YOURS TO WEAR.</h2>
+        <p>Explore designs inspired by mystery, resilience and the stories we carry.</p>
+        <a class="button button-outline" href="#shop">DISCOVER THE COLLECTION <span>↗</span></a>
+      </div>
+      <div class="collection-symbol">∞</div>
+    </section>
 
-        <a href="#headwear" class="category-card">
-            <img src="images/cap.jpg" alt="DARKVEILUM Headwear">
-            <div class="category-overlay">
-                <h3>HEADWEAR</h3>
-                <span>EXPLORE ↗</span>
-            </div>
-        </a>
+    <section class="manifesto section-wrap">
+      <p class="section-kicker">OUR PHILOSOPHY</p>
+      <h2>YOU WEREN'T MADE<br>TO <em>BLEND IN.</em></h2>
+      <p>Stay curious. Stay aware. Stay beyond the ordinary.</p>
+    </section>
 
-        <a href="#polos" class="category-card">
-            <img src="images/polo.jpg" alt="DARKVEILUM Polos">
-            <div class="category-overlay">
-                <h3>POLOS</h3>
-                <span>EXPLORE ↗</span>
-            </div>
-        </a>
+    <section class="contact section-wrap" id="contact">
+      <div><p class="section-kicker">NEED HELP?</p><h2>LET'S TALK.</h2><p class="muted">Questions about a product or an order? Contact us directly.</p></div>
+      <a class="button button-light" id="contactWhatsApp" href="#" target="_blank" rel="noopener">CONTACT ON WHATSAPP ↗</a>
+    </section>
+  </main>
 
-    </div>
-</section>
+  <footer class="footer">
+    <a class="logo" href="#home">DARK<span>VEILUM</span><i>®</i></a>
+    <p>NOT EVERYTHING HIDDEN IS LOST.</p>
+    <small>© <span id="year"></span> DARKVEILUM. ALL RIGHTS RESERVED.</small>
+  </footer>
 
-<!-- SHOP -->
-<section class="section shop" id="shop">
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="cart-head"><h2>YOUR BAG</h2><button class="close-cart" id="cartClose" aria-label="Close bag">✕</button></div>
+    <div class="cart-items" id="cartItems"><p class="muted">Your bag is empty.</p></div>
+    <div class="cart-footer"><div class="cart-total"><span>SUBTOTAL</span><strong id="cartTotal">0 DH</strong></div><button class="button button-light checkout-button" id="checkoutButton">ORDER VIA WHATSAPP ↗</button><small>Shipping and final details will be confirmed on WhatsApp.</small></div>
+  </aside>
 
-    <div class="section-heading">
-        <div>
-            <p class="section-label">DISCOVER YOUR STYLE</p>
-            <h2>FEATURED PRODUCTS</h2>
-        </div>
-        <a href="#contact" class="text-link">ORDER NOW ↗</a>
-    </div>
-
-    <div class="product-grid">
-
-        <article class="product-card" id="hoodies">
-            <div class="product-image">
-                <span class="product-tag">FEATURED</span>
-                <img src="images/hoodie.jpg" alt="DARKVEILUM Hoodie">
-            </div>
-            <div class="product-info">
-                <p>HOODIES</p>
-                <h3>DARKVEILUM OVERSIZED HOODIE</h3>
-                <span>CONTACT FOR PRICE</span>
-                <a href="#contact" class="product-button">ORDER PRODUCT ↗</a>
-            </div>
-        </article>
-
-        <article class="product-card" id="tshirts">
-            <div class="product-image">
-                <img src="images/tshirt.jpg" alt="DARKVEILUM T-shirt">
-            </div>
-            <div class="product-info">
-                <p>T-SHIRTS</p>
-                <h3>RESILIENT T-SHIRT</h3>
-                <span>CONTACT FOR PRICE</span>
-                <a href="#contact" class="product-button">ORDER PRODUCT ↗</a>
-            </div>
-        </article>
-
-        <article class="product-card" id="headwear">
-            <div class="product-image">
-                <span class="product-tag">NEW</span>
-                <img src="images/cap.jpg" alt="DARKVEILUM Cap">
-            </div>
-            <div class="product-info">
-                <p>HEADWEAR</p>
-                <h3>DARKVEILUM BUCKET HAT</h3>
-                <span>CONTACT FOR PRICE</span>
-                <a href="#contact" class="product-button">ORDER PRODUCT ↗</a>
-            </div>
-        </article>
-
-        <article class="product-card" id="polos">
-            <div class="product-image">
-                <img src="images/polo.jpg" alt="DARKVEILUM Polo">
-            </div>
-            <div class="product-info">
-                <p>POLOS</p>
-                <h3>CAPTIVATING MYSTERY POLO</h3>
-                <span>CONTACT FOR PRICE</span>
-                <a href="#contact" class="product-button">ORDER PRODUCT ↗</a>
-            </div>
-        </article>
-
-    </div>
-</section>
-
-<!-- COLLECTIONS -->
-<section class="collections section" id="collections">
-    <p class="section-label">MORE THAN A COLLECTION</p>
-    <h2>DISCOVER OUR<br><span>UNIVERSE.</span></h2>
-
-    <div class="collection-grid">
-
-        <a href="#shop" class="collection-card">
-            <div class="collection-number">01</div>
-            <h3>MYSTERY</h3>
-            <p>Hidden symbols. Unknown truths.</p>
-            <span>DISCOVER ↗</span>
-        </a>
-
-        <a href="#shop" class="collection-card">
-            <div class="collection-number">02</div>
-            <h3>RESILIENT</h3>
-            <p>WEAR WHAT YOU SURVIVED.</p>
-            <span>DISCOVER ↗</span>
-        </a>
-
-        <a href="#shop" class="collection-card">
-            <div class="collection-number">03</div>
-            <h3>CRIMINAL CAT</h3>
-            <p>Someone is watching you.</p>
-            <span>DISCOVER ↗</span>
-        </a>
-
-        <a href="#shop" class="collection-card">
-            <div class="collection-number">04</div>
-            <h3>MOROCCO</h3>
-            <p>Identity meets streetwear.</p>
-            <span>DISCOVER ↗</span>
-        </a>
-
-    </div>
-</section>
-
-<!-- BRAND MESSAGE -->
-<section class="brand-message">
-    <p>THE DARKVEILUM PHILOSOPHY</p>
-    <h2>YOU WEREN'T MADE<br>
-        TO <span>BLEND IN.</span>
-    </h2>
-    <a href="#shop" class="main-button">WEAR YOUR MINDSET ↗</a>
-</section>
-
-<!-- ABOUT -->
-<section class="about section" id="about">
-    <div class="about-content">
-        <p class="section-label">OUR STORY</p>
-        <h2>WELCOME TO<br>DARKVEILUM.</h2>
-        <p>
-            DARKVEILUM is a streetwear brand inspired by
-            mystery, suspense, creativity and individuality.
-
-            We transform ideas, symbols and stories into
-            clothing. Each design represents a different
-            perspective and a different mindset.
-        </p>
-        <a href="#contact" class="text-link">CONNECT WITH US ↗</a>
-    </div>
-    <div class="about-image">
-        <img src="images/hero.jpg" alt="DARKVEILUM streetwear identity">
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact section" id="contact">
-    <p class="section-label">GET IN TOUCH</p>
-    <h2>READY TO ENTER<br><span>THE VEIL?</span></h2>
-    <p>Have a question or want to order a product?</p>
-
-    <!-- Replace the number with your WhatsApp number -->
-    <a href="https://wa.me/212600000000"
-       target="_blank" rel="noopener"
-       class="main-button">
-        CONTACT US ON WHATSAPP ↗
-    </a>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-
-    <div class="footer-main">
-        <div>
-            <a href="#home" class="logo">DARK<span>VEILUM</span></a>
-            <p>SOME SECRETS DESERVE TO BE WORN.</p>
-        </div>
-
-        <div class="footer-links">
-            <h4>EXPLORE</h4>
-            <a href="#home">Home</a>
-            <a href="#shop">Shop</a>
-            <a href="#categories">Categories</a>
-            <a href="#collections">Collections</a>
-        </div>
-
-        <div class="footer-links">
-            <h4>INFORMATION</h4>
-            <a href="#about">About Us</a>
-            <a href="#contact">Contact</a>
-            <a href="#contact">Shipping Information</a>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2026 DARKVEILUM. ALL RIGHTS RESERVED.</p>
-        <p>MADE FOR THOSE WHO DARE TO BE DIFFERENT.</p>
-    </div>
-
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
